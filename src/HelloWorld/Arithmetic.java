@@ -1,3 +1,5 @@
+package HelloWorld;
+
 public class Arithmetic {
     public static void main(String[] args) {
         double number1 = 12;
