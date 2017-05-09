@@ -1,4 +1,4 @@
-package exerciseStuff;
+package ConsoleIO;
 
 import java.util.Scanner;
 
@@ -23,14 +23,6 @@ public class ConsoleExercises {
         System.out.println("Type a sentence: ");
         String sentence = scan.nextLine();
         System.out.println(sentence);
-
-        System.out.println("What is the width of your classroom?");
-        double width = scan.nextInt();
-        System.out.println("What is the length of your classroom? ");
-        double length = scan.nextInt();
-
-        System.out.println("The Area of your classroom is: " + (width*length) + ".");
-        System.out.println("The Perimeter of your classroom is: " + ((width*2) + (length*2)) + ".");
 
     }
 }
