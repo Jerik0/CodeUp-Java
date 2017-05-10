@@ -1,21 +1,25 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
 
         //Loop Basics
-        //FizzBuzz
+        //Display Squared and Cubed Table
 
-        for (int i = 1; i <=100; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
-        }
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Choose a number, 127 or lower, to be squared and cubed.");
+    int input = scan.nextInt();
+    int i;
+
+    System.out.println("Here is your table for number " + input + "!");
+    System.out.println("Number | Squared | Cubed");
+    System.out.println("------ | ------- | -----");
+    for(i = 1; i<=input; i++) {
+
+        System.out.println(i + "      | " + (i*i) + "       | " + (i*i*i) + "     ");
+    }
 
     }
 
