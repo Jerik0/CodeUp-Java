@@ -5,12 +5,13 @@ public class ControlFlowExercises {
         //Loop Basics
         //Do-While
 
-        long i = 2;
+        for(long i = 2; i <=1000000; i*=i) {
+           System.out.println(i);
+        }
 
-        do {
+        for(int i = 100; i >= -10; i-=5) {
             System.out.println(i);
-            i*=i;
-        } while (i <= 1000000);
+        }
 
     }
 
