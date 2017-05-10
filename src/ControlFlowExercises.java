@@ -3,13 +3,16 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
 
         //Loop Basics
-        //While
-        int i = 5;
+        //Do-While
+        int i = 0;
 
-        while (i <= 15) {
-            System.out.println(i);
-            i++;
+        do {
+                System.out.println(i);
+                i+=2;
         }
+        while (i <= 100);
+
     }
 
 }
+
