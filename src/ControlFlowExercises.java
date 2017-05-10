@@ -4,13 +4,13 @@ public class ControlFlowExercises {
 
         //Loop Basics
         //Do-While
-        int i = 0;
+
+        int i = 100;
 
         do {
-                System.out.println(i);
-                i+=2;
-        }
-        while (i <= 100);
+            System.out.println(i);
+            i-=5;
+        } while (i >= -10);
 
     }
 
