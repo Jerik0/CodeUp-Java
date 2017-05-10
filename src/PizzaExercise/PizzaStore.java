@@ -34,7 +34,8 @@ public class PizzaStore {
         output.println("Sausage");
         output.println("Pineapple");
         output.println("Extra Pepperoni");
-        output.println("Choose any sides that you would like. If none desired, type 'none'");
+        output.println("Choose any sides that you would like. If none desired, type 'none'.");
+
 
     }
 }
