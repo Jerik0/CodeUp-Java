@@ -51,9 +51,25 @@ public class GradeAverager {
             System.out.println("The average is: " + (sum / arraySize));
         }
 
+        //Sets the variable 'min' equal to the first index in the array 'arrayGrades'.
+        int min  = arrayGrades[0];
 
+        //loops through the whole array 'arrayGrades'.
+        for(i=1; i<arrayGrades.length; i++) {
 
+            //if the current index of arrayGrades is less than the value of the 1st index,
+            if (arrayGrades[i] < min) {
+                //sets min equal to the lowest index in arrayGrades.
+                min = arrayGrades[i];
+            }
+        }
 
+        System.out.println("Type Y to see the lowest grade, or N to quit.");
+        String cont2 = scan.nextLine();
+
+        if (cont2.equalsIgnoreCase("y")) {
+            System.out.println("The lowest grade in class is: " + min);
+        }
 
     }
 
