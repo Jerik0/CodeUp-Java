@@ -8,11 +8,16 @@ public class RainDrops {
 
         Scanner scan = new Scanner(System.in);
 
-        int i;
-
         System.out.println("Enter a number for the rain to reach.");
-        int input = scan.nextInt();
+        int num = scan.nextInt();
 
+        for (int i = 2; i<=num; i++) {
+            while(num % i == 0) {
+                System.out.println(num + "|" + i);
+                System.out.println("--------");
+                num=num/i;
+            }
         }
     }
+}
 
