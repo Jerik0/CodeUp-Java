@@ -52,7 +52,7 @@ public class GradeAverager {
         }
 
         //Sets the variable 'min' equal to the first index in the array 'arrayGrades'.
-        int min  = arrayGrades[0];
+        int min = arrayGrades[0];
 
         //loops through the whole array 'arrayGrades'.
         for(i=1; i<arrayGrades.length; i++) {
