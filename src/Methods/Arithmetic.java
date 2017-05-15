@@ -47,46 +47,55 @@ public class Arithmetic {
     }
 
     //Create a method that validates that user input is in a certain range
-    private static int getIntegers(int min, int max) {
+    private static int getIntegers() {
+        System.out.println("Type two numbers (between 1 and 10) to perform mathematical functions on.");
+        int input1 = scan.nextInt();
+        int input2 = scan.nextInt();
+        return checker(input1, input2);
+    }
 
-        if (min < 1 && max > 10) {
-            System.out.println("Invalid number, try again!");
-            return getIntegers(min, max);
+    private static int checker(int input1, int input2) {
+        if ((input1 < 1 || input1 > 10) || (input2 < 1 || input2 > 10)) {
+            System.out.println("Invalid number!");
+            return getIntegers();
         } else {
-            System.out.println("Thanks!");
-            return 100;
+            System.out.println("Thanks! You chose " + input1 + " and " + input2 + ".");
+            add(input1, input2);
+            subtract(input1, input2);
+            multiply(input1, input2);
+            divide(input1, input2);
+            modulus(input1, input2);
+            return 1;
         }
+    }
+
+    private static int factorCheck() {
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("Type a number (between 1 and 10) to find the factorial for.");
+        int n = scan.nextInt();
+        if (n < 1 || n > 10) {
+            factorCheck();
+        } else {
+        factor(n);
+        }
+        return 0;
     }
 
     private static int factor(int n) {
         int result;
-            if (n < 1 || n > 10) {
-                System.out.println("Whoops that wasn't in the range!");
-                return 1;
-            } else {
-                result = factor(n-1) * n;
-                System.out.println(n + "!" + " = " + result);
-                return result;
-            }
+        if (n == 1) {
+            return 1;
         }
+        result = factor(n-1) * n;
+        System.out.println(n + "!" + " = " + result);
+        return result;
+    }
 
     public static void main(String[] args) {
 
-        System.out.println("Type two numbers (between 1 and 10) to perform mathematical functions on.");
-        int input1 = scan.nextInt();
-        int input2 = scan.nextInt();
-        getIntegers(input1, input2);
-        add(input1, input2);
-        subtract(input1, input2);
-        multiply(input1, input2);
-        divide(input1, input2);
-        modulus(input1, input2);
 
-        System.out.println("-----------------------------------------------------------");
-        System.out.println("Type a number (between 1 and 10) to find the factorial for.");
-        int a = scan.nextInt();
-        factor(a);
+        getIntegers();
 
-
+        factorCheck();
     }
 }
