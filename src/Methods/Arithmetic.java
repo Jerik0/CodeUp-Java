@@ -146,7 +146,9 @@ public class Arithmetic {
 
     private static void guessCheck(int guess, int rando) {
         if (guess == rando) {
+            System.out.println("-------------------------------");
             System.out.println("Good Guess! Thanks for playing!");
+            System.out.println("-------------------------------");
         } else if (guess < rando) {
             System.out.println("Higher...");
             guess(rando);
