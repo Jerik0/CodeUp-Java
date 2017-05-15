@@ -91,7 +91,7 @@ public class Arithmetic {
         return result;
     }
 
-    private static int diceSides() {
+    private static void diceSides() {
         System.out.println("Enter how many dice to roll: ");
         int dice = scan.nextInt();
         int count;
@@ -99,16 +99,28 @@ public class Arithmetic {
         int sides = scan.nextInt();
         System.out.println("Thanks!");
         System.out.println("-------------------------");
-        for (count=0; count<=dice; count++) {
+        for (count=0; count<dice; count++) {
             diceRoll(sides, count);
         }
-        return 0;
+        scan.nextLine();
+        rollCheck();
     }
 
     private static int diceRoll(int sides, int count) {
         int rando = (int) (Math.random() * sides + 1);
         System.out.println("Die " + (count + 1) + ": " + rando);
         return 0;
+    }
+
+    private static void rollCheck() {
+        System.out.println("Roll again? (Y/N)");
+        String rollChoice = scan.nextLine();
+
+        if (rollChoice.equalsIgnoreCase("Y")) {
+            diceSides();
+        } else {
+            return;
+        }
     }
 
     public static void main(String[] args) {
@@ -119,6 +131,8 @@ public class Arithmetic {
 //        factorCheck();
 
         diceSides();
+
+
 
     }
 }
