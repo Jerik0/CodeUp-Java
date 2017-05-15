@@ -46,7 +46,7 @@ public class Arithmetic {
         return result;
     }
 
-    //Create a method that validates that user input is in a certain range
+    //Validates that user input is in a certain range
     private static int getIntegers() {
         System.out.println("Type two numbers (between 1 and 10) to perform mathematical functions on.");
         int input1 = scan.nextInt();
@@ -91,11 +91,34 @@ public class Arithmetic {
         return result;
     }
 
+    private static int diceSides() {
+        System.out.println("Enter how many dice to roll: ");
+        int dice = scan.nextInt();
+        int count;
+        System.out.println("Thanks! Now, enter how many sides you'd like your dice to have: ");
+        int sides = scan.nextInt();
+        System.out.println("Thanks!");
+        System.out.println("-------------------------");
+        for (count=0; count<=dice; count++) {
+            diceRoll(sides, count);
+        }
+        return 0;
+    }
+
+    private static int diceRoll(int sides, int count) {
+        int rando = (int) (Math.random() * sides + 1);
+        System.out.println("Die " + (count + 1) + ": " + rando);
+        return 0;
+    }
+
     public static void main(String[] args) {
 
 
-        getIntegers();
+//        getIntegers();
+//
+//        factorCheck();
 
-        factorCheck();
+        diceSides();
+
     }
 }
