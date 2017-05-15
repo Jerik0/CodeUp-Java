@@ -107,6 +107,7 @@ public class Arithmetic {
         int sides = scan.nextInt();
         System.out.println("Thanks!");
         System.out.println("-------------------------------");
+        System.out.println("Here's your Dice Roll: ");
         for (count=0; count<dice; count++) {
             diceRoll(sides, count);
         }
@@ -132,18 +133,20 @@ public class Arithmetic {
         }
     }
 
-    //Generates random number (1-100) and calls guess()
+    //Generates random number (1-100) and calls guess().
     private static void generate() {
         int randomNum = (int) (Math.random() * 100 + 1);
         System.out.println("Guess which number I picked! Hint: (it's between 1 and 100)");
         guess(randomNum);
     }
 
+    //Takes in user input and calls guessCheck().
     private static void guess(int random) {
         int guess = scan.nextInt();
         guessCheck(guess, random);
     }
 
+    //Checks user input and contrasts against randomly generated number. Replies accordingly.
     private static void guessCheck(int guess, int rando) {
         if (guess == rando) {
             System.out.println("-------------------------------");
