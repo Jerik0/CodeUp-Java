@@ -126,9 +126,9 @@ public class Arithmetic {
     public static void main(String[] args) {
 
 
-//        getIntegers();
-//
-//        factorCheck();
+        getIntegers();
+
+        factorCheck();
 
         diceSides();
 
