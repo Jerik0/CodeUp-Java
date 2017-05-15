@@ -6,8 +6,8 @@ public class Arithmetic {
 
     private static Scanner scan = new Scanner(System.in);
 
-    //Create four separate methods. Each will perform an arithmetic operation:
-
+//Create four separate methods. Each will perform an arithmetic operation:
+//-------------------------------------------------------------------------------------------------
     //Adds two numbers.
     private static int add(int first, int second) {
         int result = (first + second);
@@ -51,6 +51,8 @@ public class Arithmetic {
         return result;
     }
 
+//-------------------------------------------------------------------------------------------------
+
     //Receives two numbers from user, filters through checker().
     private static int getIntegers() {
         System.out.println("Type two numbers (between 1 and 10) to perform mathematical functions on.");
@@ -75,6 +77,7 @@ public class Arithmetic {
         }
     }
 
+//-------------------------------------------------------------------------------------------------
     //Receives user input and checks if it is in specified range. If in range, calls factor().
     private static int factorCheck() {
         System.out.println("Type a number (between 1 and 10) to find the factorial for.");
@@ -97,7 +100,7 @@ public class Arithmetic {
         System.out.println(n + "!" + " = " + result);
         return result;
     }
-
+//-------------------------------------------------------------------------------------------------
     //Receives user Input for how many dice, and how many sides for the dice to have.
     private static void diceSides() {
         System.out.println("Enter how many dice to roll: ");
@@ -132,7 +135,7 @@ public class Arithmetic {
             return;
         }
     }
-
+//-------------------------------------------------------------------------------------------------
     //Generates random number (1-100) and calls guess().
     private static void generate() {
         int randomNum = (int) (Math.random() * 100 + 1);
@@ -160,7 +163,7 @@ public class Arithmetic {
             guess(rando);
         }
     }
-
+//-------------------------------------------------------------------------------------------------
     public static void main(String[] args) {
 
         System.out.println("Welcome to Jeriko's Mini Games!");
