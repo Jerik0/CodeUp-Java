@@ -43,11 +43,9 @@ public class Input {
     }
 
     public double getDouble() {
-        int min = 0;
-        int max = 10;
-
+        double min = 0;
+        double max = 10;
         double input;
-        System.out.println("Please enter a decimal number!");
         input = scanner.nextDouble();
 
         if (input > min && input <= max) {
