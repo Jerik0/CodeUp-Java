@@ -12,7 +12,7 @@ public class ControlFlowExercises {
 
     String cont;
         do {
-    System.out.println("Input a numerical grade, from 0-100, to see the Letter Grade associated with it.");
+    System.out.println("InputStuff a numerical grade, from 0-100, to see the Letter Grade associated with it.");
     int input = scan.nextInt();
         if (input <= 59) {
             System.out.println("The corresponding Letter Grade is: F");

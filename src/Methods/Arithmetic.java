@@ -101,7 +101,7 @@ public class Arithmetic {
         return result;
     }
 //-------------------------------------------------------------------------------------------------
-    //Receives user Input for how many dice, and how many sides for the dice to have.
+    //Receives user InputStuff for how many dice, and how many sides for the dice to have.
     private static void diceSides() {
         System.out.println("Enter how many dice to roll: ");
         int dice = scan.nextInt();

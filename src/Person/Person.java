@@ -1,7 +1,5 @@
 package Person;
 
-import java.util.Scanner;
-
 public class Person {
 
     public String firstName;
