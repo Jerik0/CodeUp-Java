@@ -6,7 +6,7 @@ public class MovieNameGen {
 
     public String[] nouns = {"Hippos", "Olive Branch", "Gardener", "Triceratops", "Spy", "Tyrants", "Villains", "Fashion Models", "Cough Medicine", "Pickle", "Baskets", "Variation", "Assistant", "Stranger", "Engineering", "Kings", "Gene", "Mud", "Potato", "Candidate", "Pie", "Me", "Uncle", "Bath", "Dysfunction", "Way", "Employment", "Death", "Situation", "Throat", "Dare"};
 
-    public String[] firstName = {"Clive", "Arthur", "Mr.", "Jive", "Curly", "Moe", "Bo", "Bartholomew", "Chester", "Beatrix", "Ingrid", "Tyrion", "Morpheus", "Neo", "Bradley", "Brumhilde", "Ebert", "Dilbert", "Freida"};
+    public String[] firstName = {"Clive", "Arthur", "Mr.", "Jive", "Curly", "Moe", "Bo", "Bartholomew", "Chester", "Beatrix", "Ingrid", "Tyrion", "Morpheus", "Neo", "Bradley", "Brumhilde", "Ebert", "Dilbert", "Freida", "Humphrey", "Nigel", "Rupert"};
 
     public String[] lastName = {"Squiggins", "Jangles", "Jiggy", "Babbles", "Strange", "Hawkins", "Knocking", "Parts", "Knobbins", "Barrymore", "Swellington", "Swindler", "Sketch", "Twinkle", "Belchers", "Longbottom", "Potter", "Snape", "Stark", "Lannister"};
 
