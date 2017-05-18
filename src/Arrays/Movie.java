@@ -12,4 +12,13 @@ public class Movie {
         this.director = direct;
     }
 
+    public String getInfo() {
+        String results;
+        results = (category + " Movie, Title: " + name + ", Directed By " + director);
+        return results;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 }

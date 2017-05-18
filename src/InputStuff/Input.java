@@ -12,8 +12,7 @@ public class Input {
 
     public String getString() {
         String input;
-        System.out.println("Gimme a sentence or a word!");
-        input = scanner.nextLine();
+        input = scanner.next();
         return input;
     }
 
