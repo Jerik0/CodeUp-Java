@@ -17,10 +17,11 @@ public class MoviesApplication {
 
         int[] optionNumbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
 
+        print.println("----------Choose an Option!----------");
         for (int i = 0; i < optionNumbers.length; i++) {
             System.out.printf("%d --  %s \n", optionNumbers[i], options[i]);
         }
-
+        print.println("-------------------------------------");
         switch (userInput.getString()) {
             case "0": {
                 System.exit(0);
@@ -28,6 +29,7 @@ public class MoviesApplication {
             break;
             case "1": {
                 for (Movie movie : movieFinder) {
+                    print.println("-------------------------------------");
                     print.println(movie.getInfo());
                 }
             }

@@ -2,11 +2,11 @@ package Arrays;
 
 public class MovieNameGen {
 
-    public String[] adjectives = {"Preposterous", "Succulent", "Horrible", "Voluptuous", "Pungent", "Pokey", "Dull", "Marvelous", "Gargantuan", "Gory", "The"};
+    public String[] adjectives = {"Preposterous", "Succulent", "Horrible", "Voluptuous", "Pungent", "Pokey", "Dull", "Marvelous", "Gargantuan", "Gory", "The", "Different", "Pure", "Impossible", "Consistently", "Impossibly", "Veritable", "The Unlikely", "The Traditional", "Basic", "Used", "Willing", "Large", "Electrical", "Bad", "Hardened", ""};
 
-    public String[] nouns = {"Hippos", "Olive Branch", "Gardener", "Triceratops", "Spy", "Tyrants", "Villains", "Fashion Models", "Cough Medicine", "Pickle"};
+    public String[] nouns = {"Hippos", "Olive Branch", "Gardener", "Triceratops", "Spy", "Tyrants", "Villains", "Fashion Models", "Cough Medicine", "Pickle", "Baskets", "Variation", "Assistant", "Stranger", "Engineering", "Kings", "Gene", "Mud", "Potato", "Candidate", "Pie", "Me", "Uncle", "Bath", "Dysfunction", "Way", "Employment", "Death", "Situation", "Throat", "Dare"};
 
-    public String[] firstName = {"Clive", "Arthur", "Mr.", "Jive", "Curly", "Moe", "Bo", "Bartholomew", "Chester", "Beatrix"};
+    public String[] firstName = {"Clive", "Arthur", "Mr.", "Jive", "Curly", "Moe", "Bo", "Bartholomew", "Chester", "Beatrix", "Ingrid", ""};
 
     public String[] lastName = {"Squiggins", "Jangles", "Jiggy", "Babbles", "Strange", "Hawkins", "Knocking", "Parts", "Knobbins", "Barrymore"};
 

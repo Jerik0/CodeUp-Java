@@ -14,7 +14,7 @@ public class Movie {
 
     public String getInfo() {
         String results;
-        results = (category + " Movie, Title: " + name + ", Directed By " + director);
+        results = ("Category: " + category + "\nTitle: " + name + "\nDirected By: " + director);
         return results;
     }
 
