@@ -13,10 +13,14 @@ public class ShapesTest {
         double result1 = listener.getDouble();
         System.out.println("Type the width of the quadrilateral");
         double result2 = listener.getDouble();
-        square = new Square(result1);
         rectangle = new Rectangle(result1, result2);
         System.out.println("The Perimeter of your rectangle is: " + rectangle.getPerimeter());
         System.out.println("The Area of your rectangle is: " + rectangle.getArea());
+        System.out.println("Now type the side length of your square:");
+        double result3 = listener.getDouble();
+        square = new Square(result3);
+        System.out.println("The Perimeter of your square is: " + square.getPerimeter());
+        System.out.println("The Area of your square is: " + square.getArea());
     }
 
 }
