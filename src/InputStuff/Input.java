@@ -42,17 +42,9 @@ public class Input {
     }
 
     public double getDouble() {
-        double min = 0;
-        double max = 10;
         double input;
         input = scanner.nextDouble();
-
-        if (input > min && input <= max) {
-            return (input);
-        } else {
-            getInt();
-        }
-        return 0;
+        return (input);
     }
 
 }

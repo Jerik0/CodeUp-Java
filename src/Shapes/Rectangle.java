@@ -2,8 +2,13 @@ package Shapes;
 
 public class Rectangle {
 
-    private double length;
-    private double width;
+    protected double length;
+    protected double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 
     public double getArea() {
         double areaTotal;

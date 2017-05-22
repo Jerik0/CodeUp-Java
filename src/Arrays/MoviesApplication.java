@@ -31,14 +31,14 @@ public class MoviesApplication {
                 } break;
                 case "1": {
                     for (Movie movie : movieFinder) {
-                        print.println("-------------------------------------");
+                        print.println("------------------------------------------");
                         print.println(movie.getInfo());
                     }
                 } break;
                 case "2": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Horror")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -46,7 +46,7 @@ public class MoviesApplication {
                 case "3": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Suspense")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -54,7 +54,7 @@ public class MoviesApplication {
                 case "4": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Comedy")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -62,7 +62,7 @@ public class MoviesApplication {
                 case "5": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Musical")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -70,7 +70,7 @@ public class MoviesApplication {
                 case "6": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Psychological Thriller")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -78,7 +78,7 @@ public class MoviesApplication {
                 case "7": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Romance")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -86,7 +86,7 @@ public class MoviesApplication {
                 case "8": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Indie")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -94,7 +94,7 @@ public class MoviesApplication {
                 case "9": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Adventure")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -102,7 +102,7 @@ public class MoviesApplication {
                 case "10": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Sci-Fi")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
@@ -110,13 +110,13 @@ public class MoviesApplication {
                 case "11": {
                     for (Movie movie : movieFinder) {
                         if (movie.getCategory().equals("Documentary")) {
-                            print.println("-------------------------------------");
+                            print.println("------------------------------------------");
                             print.println(movie.getInfo());
                         }
                     }
                 } break;
             }
-            print.println("-------------------------------------");
+            print.println("------------------------------------------");
             displayMenu();
         }
 
