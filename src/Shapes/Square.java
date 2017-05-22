@@ -1,7 +1,9 @@
 package Shapes;
 
-public class Square extends Quadralateral {
+public class Square extends Quadrilateral {
 
 
+
+    public void setLength(Double length);
 
 }
