@@ -13,6 +13,10 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void addGrade(double grade) {
         this.grades.add(grade);
     }
@@ -35,20 +39,6 @@ public class Student {
     }
 
     public static void main(String[] args) {
-
-        Student Jonathan = new Student("Jonathan");
-        Student Mike = new Student("Mike");
-        Student Dusty = new Student("Dusty");
-        Student Jaime = new Student("Jaime");
-
-        Jonathan.addGrade(95);
-        Jonathan.addGrade(80);
-        Jonathan.addGrade(70);
-        Mike.addGrade(90);
-        Jaime.addGrade(91);
-        Dusty.addGrade(82);
-
-        System.out.println(Jonathan.getGradeAverage());
 
     }
 
